@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/common.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/banner.css">
     
 </head>
 <body>
@@ -26,46 +27,58 @@
             </li>
           </ul>
         </nav>
-      </header>
-
-    <section>
-      <section>
-        <h2 id="descripcion">Descripción del explorador</h2>
-        <p>Me llamo El Explorador. Me dedico a viajar a toda clase de lugares, descubriendo secciones inóspidas y muchas veces poco exploradas
-            por la humanidad. Me destino a ir a cualquier aquel lugar que atrape mi curiosidad. Pueden ser tanto parajes naturales, entornos urbanos,
-            o recónditos lugares rurales.
-        </p>
-      </section>
-      <section>
-        <h2>Skills</h2>
-        <ul class="list">
-          <li>
-            <figure>
-              <img src="./assets/series/serie_1.jpg" alt="portada serie 1">
-              <figcaption>Senderismo/figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="./assets/series/serie_2.jpg" alt="portada serie 2">
-              <figcaption>Montañismo</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="./assets/series/serie_3.jpg" alt="portada serie 3">
-              <figcaption>Caza y pesca</figcaption>
-            </figure>
-          </li>
-          <li>
-            <figure>
-              <img src="./assets/series/serie_4.jpg" alt="portada serie 4">
-              <figcaption>Construcción de refugios</figcaption>
-            </figure>
-          </li>
-        </ul>
-      </section>
-    </section>  
+    </header>
+    <section class="banner">
+        <picture class="image">
+            <source srcset="./assets/responsive-images/img-larga.jpg" media="(width > 768px)">
+            <source srcset="./assets/responsive-images/img-corta.jpg">
+            <img src="./assets/responsive-images/img-larga.JPG" alt="">
+        </picture>
+        <div class="content">
+          <p class="heading-1">Viajes por el mundo</p>
+          <p class="heading-2">Zonas urbanas, rurales y naturales</p>
+        </div>
+    </section>
+    <main class="main">
+        <section>
+            <section>
+                <h2 id="descripcion">Descripción del explorador</h2>
+                <p>Me llamo El Explorador. Me dedico a viajar a toda clase de lugares, descubriendo secciones inóspidas y muchas veces poco exploradas
+                    por la humanidad. Me destino a ir a cualquier aquel lugar que atrape mi curiosidad. Pueden ser tanto parajes naturales, entornos urbanos,
+                    o recónditos lugares rurales.
+                </p>
+            </section>
+            <section>
+                <h2>Skills</h2>
+                <ul class="list">
+                <li>
+                    <figure>
+                    <img src="./assets/series/serie_1.jpg" alt="portada serie 1">
+                    <figcaption>Senderismo/figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                    <img src="./assets/series/serie_2.jpg" alt="portada serie 2">
+                    <figcaption>Montañismo</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                    <img src="./assets/series/serie_3.jpg" alt="portada serie 3">
+                    <figcaption>Caza y pesca</figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                    <img src="./assets/series/serie_4.jpg" alt="portada serie 4">
+                    <figcaption>Construcción de refugios</figcaption>
+                    </figure>
+                </li>
+                </ul>
+            </section>
+        </section>  
+    </main>
     <footer class="footer">
         <ul class="list">
             <li>
