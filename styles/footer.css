@@ -1,0 +1,12 @@
+.footer {
+    background-color: rgb(249, 226, 19);
+}
+
+.footer .list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
