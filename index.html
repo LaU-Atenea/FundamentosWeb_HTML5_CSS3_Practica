@@ -23,7 +23,7 @@
               <a class="btn1 hide" href="#descripcion">Skills</a>
             </li>
             <li>
-              <a class="btn1 hide" href="./contacto.html">Contacto</a>
+              <a class="btn1 hide" href="#contacto">Contacto</a>
             </li>
           </ul>
         </nav>
@@ -52,33 +52,69 @@
                 <h2>Skills</h2>
                 <ul class="list">
                 <li>
-                    <figure>
-                    <img src="./assets/series/serie_1.jpg" alt="portada serie 1">
-                    <figcaption>Senderismo/figcaption>
-                    </figure>
+                    Senderismo
                 </li>
                 <li>
-                    <figure>
-                    <img src="./assets/series/serie_2.jpg" alt="portada serie 2">
-                    <figcaption>Montañismo</figcaption>
-                    </figure>
+                    Montañismo
                 </li>
                 <li>
-                    <figure>
-                    <img src="./assets/series/serie_3.jpg" alt="portada serie 3">
-                    <figcaption>Caza y pesca</figcaption>
-                    </figure>
+                    Caza y pesca
                 </li>
                 <li>
-                    <figure>
-                    <img src="./assets/series/serie_4.jpg" alt="portada serie 4">
-                    <figcaption>Construcción de refugios</figcaption>
-                    </figure>
+                    Construcción de refugios
                 </li>
                 </ul>
             </section>
         </section>  
     </main>
+    <section class="form">
+        <h2 id="contacto">Contacto</h2>
+        <form action="#" method="post">
+          <div class="form-element">
+            <label for="nombre">Nombre: </label>
+            <input required type="text" name="nombre" id="nombre" placeholder="Añade tu nombre">
+          </div>
+          <div class="form-element">
+            <label for="apellidos">Apellidos: </label>
+            <input required type="text" name="apellidos" id="apellidos" placeholder="Añade tus apellidos">
+          </div>
+          <div class="form-element">
+            <label for="tel">Telefono:</label>
+            <input required type="tel" name="tel" id="tel" autocomplete="off" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+              title="Formato esperado: 123-123-1234">
+          </div>
+          <fieldset>
+            <legend>¿Cómo me conociste?</legend>
+            <label for="uni">Universidad</label>
+            <input required type="radio" name="conocer" id="uni" value="uni" checked>
+            <label for="kick">Keepcoding kick-off</label>
+            <input required type="radio" name="conocer" id="kick" value="kick">
+            <label for="cole">Colegio</label>
+            <input required type="radio" name="conocer" id="cole" value="cole">
+            <label for="github">En Github</label>
+            <input required type="radio" name="conocer" id="github" value="github">
+          </fieldset>
+          <div class="form-element">
+            <label for="github">Tag de github</label>
+            <input required type="text" name="github" id="github" autocomplete="off" pattern="^@[^\s]+" title="El formato debe ser @username." required>
+          </div>
+          <div class="form-element">
+            <label for="bio">Más información del usuario</label>
+            <textarea required name="bio" id="bio" rows="6" placeholder="Añade más información tuya. Max 180" maxlength="180" required></textarea>
+          </div>
+          <div class="form-element row">
+            <label for="newsletter">Acceso a la newsletter</label>
+            <input type="checkbox" name="newsletter" id="newsletter">
+          </div>
+          <div>
+            <input class="btn" type="reset" value="Reset">
+            <button class="btn" type="submit">
+              Guardar
+            </button>
+          </div>
+        </form>
+
+    </section>
     <footer class="footer">
         <ul class="list">
             <li>
